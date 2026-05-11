@@ -1,0 +1,23 @@
+on:
+
+  push:
+
+
+jobs:
+
+  teste:
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+
+      - name: Baixar código
+
+        uses: actions/checkout@v4
+
+
+
+      - name: Mensagem
+
+        run: echo "CI funcionando com sucesso!"
